@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import bg from "../public/images/bg.png";
 import scroll from "../public/images/scroll.png";
+import excessBg from "../public/images/excessBg.png";
+import skills from "../public/images/skill.png";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { AiOutlineGithub } from "react-icons/ai";
 import { IoIosMail } from "react-icons/io";
@@ -29,7 +31,19 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
+      {/*Skills*/}
       <div className="w-[100%] h-[100vh] border-2">
+        <div className="flex">
+          <div>
+            <img src={skills.src} className="h-[70vh] w-[25vw]" />
+          </div>
+          <div>
+            <h2>Skills</h2>
+            <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.</p>
+
+          </div>
+        </div>
+        <div></div>
       </div>
     </>
   );
